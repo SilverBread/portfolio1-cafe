@@ -22,6 +22,7 @@ $contents = is_null($_POST['contents']) || empty($_POST['contents']) || !is_stri
 ?>
 
 
+<!DOCTYPE html>
 <html>
   <head>
   <meta charset="UTF-8">
