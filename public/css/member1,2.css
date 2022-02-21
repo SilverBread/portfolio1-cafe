@@ -316,21 +316,25 @@ h2{
 }
 
 /*member1のボタン*/
+.Btn a{
+  align-items: center;
+}
 .Member-Btn {
-  background: #faa844;
-  color: rgb(3, 3, 3);
-  margin-top: 7vh;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 6px; /*角が丸くなる*/
-  padding-top: 5px;
-  padding-bottom: 5px;
-  letter-spacing: 0.05em; /*文字間隔*/
-  font-weight: bold; /*文字太く*/
-  font-size: 18px;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
   height: 48px;
   width: 50vh;
-  display: block;
+	color: #333;
+	font-size: 18px;
+	font-weight: 700;
+  letter-spacing: 0.05em;
+  background: #faa844;
+  border-radius: 6px;
+  border: 2px solid #293B4E;
+  margin: 7vh auto;
+  text-decoration: none;
   }
   
 /*member2のボタン*/
