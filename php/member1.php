@@ -66,12 +66,12 @@ session_write_close();
       <div class="normal">
         <nav>
           <ul class="global-nav">
-            <li><a href="/portforio1-cafe/index.html">トップ</a></li>
-            <li><a href="/portforio1-cafe/index.html#about">White BookCafeについて</a></li>
-            <li><a href="/portforio1-cafe/index.html#news">お知らせ</a></li>
+            <li><a href="/portfolio1-cafe/index.html">トップ</a></li>
+            <li><a href="/portfolio1-cafe/index.html#about">White BookCafeについて</a></li>
+            <li><a href="/portfolio1-cafe/index.html#news">お知らせ</a></li>
             <li><a href="menu.html">メニュー</a></li>             
             <li><a href="member1.php">会員登録</a></li>
-            <li><a href="/portforio1-cafe/index.html#access1">アクセス</a></li>
+            <li><a href="/portfolio1-cafe/index.html#access1">アクセス</a></li>
           </ul>
         </nav>
       </div>
@@ -82,12 +82,12 @@ session_write_close();
           </label>
         <nav class="nav">
           <ul class="nav-list">
-            <li><a href="/portforio1-cafe/index.html">トップ</a></li>
-            <li><a href="/portforio1-cafe/index.html#about">White BookCafeについて</a></li>
-            <li><a href="/portforio1-cafe/index.html#news">お知らせ</a></li>
+            <li><a href="/portfolio1-cafe/index.html">トップ</a></li>
+            <li><a href="/portfolio1-cafe/index.html#about">White BookCafeについて</a></li>
+            <li><a href="/portfolio1-cafe/index.html#news">お知らせ</a></li>
             <li><a href="menu.html">メニュー</a></li>
             <li><a href="member1.php">会員登録</a></li>
-            <li><a href="/portforio1-cafe/index.html#access2">アクセス</a></li>
+            <li><a href="/portfolio1-cafe/index.html#access2">アクセス</a></li>
             <li><a href="#">退会</a></li>
           </ul>
         </nav>
@@ -160,7 +160,7 @@ session_write_close();
       <div class="footer-menu">
         <div class="left">
           <div class="inner">
-            <a href="/portforio1-cafe/index.html"><img class="top" src="image/icon.png"></a>
+            <a href="/portfolio1-cafe/index.html"><img class="top" src="image/icon.png"></a>
             <div class="Company">
               <p class="Company-name">White Book Cafe（ホワイト ブック カフェ）</p>
             </div>
@@ -172,13 +172,13 @@ session_write_close();
             <div class="wide">
               <div class="menu">
                 <ul class="menu-left">
-                  <li><a href="/portforio1-cafe/index.html#news">お知らせ</a></li>
+                  <li><a href="/portfolio1-cafe/index.html#news">お知らせ</a></li>
                   <li><a href="menu.html">メニュー</a></li>
                   <li><a href="member1.php">会員登録</a></li>
                 </ul>
                 <ul class="menu-right">
                   <li><a href="call.html">お問い合わせ</a></li>
-                  <li><a href="/portforio1-cafe/index.html#access1">アクセス</a></li>
+                  <li><a href="/portfolio1-cafe/index.html#access1">アクセス</a></li>
                   <li><a href="#">退会</a></li>
                 </ul>
               </div>
@@ -187,13 +187,13 @@ session_write_close();
             <div class="narrow">
               <div class="menu">
                 <ul class="menu-left">
-                  <li><a href="/portforio1-cafe/index.html#news">お知らせ</a></li>
+                  <li><a href="/portfolio1-cafe/index.html#news">お知らせ</a></li>
                   <li><a href="menu.html">メニュー</a></li>
                   <li><a href="member1.php">会員登録</a></li>
                 </ul>
                 <ul class="menu-right">
                   <li><a href="call.html">お問い合わせ</a></li>
-                  <li><a href="/portforio1-cafe/index.html#access2">アクセス</a></li>
+                  <li><a href="/portfolio1-cafe/index.html#access2">アクセス</a></li>
                   <li><a href="#">退会</a></li>
                 </ul>
               </div>
