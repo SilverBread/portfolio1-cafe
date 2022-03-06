@@ -1,0 +1,50 @@
+@charset "UTF-8";
+body{
+  background-color: rgb(241, 235, 222);
+}
+
+main{
+  text-align: center;
+  margin-top: 0;
+}
+h2{
+  font-size: 25px;
+  color:  #293B4E;
+  font-family: Impact;
+  margin: 6vh auto;
+}
+.message{
+  line-height: 2em;
+  
+}
+a{
+  text-decoration: none;
+}
+.btn a{
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 250px;
+	height: 60px;
+	color: #333;
+	font-size: 18px;
+	font-weight: 700;
+	text-decoration: none;
+  background: rgb(196, 199, 204);
+  border-radius: 20px;
+	border: 2px solid #325328;
+  margin: 10vh auto;
+}
+.btn a::after {
+  content: '';
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: rotate(45deg) translateY(-50%);
+	width: 6px;
+	height: 6px;
+	border-width: 2px 2px 0 0;
+	border-style: solid;
+	border-color: #325328;
+}
