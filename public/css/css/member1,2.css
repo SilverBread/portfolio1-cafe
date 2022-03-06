@@ -1,0 +1,444 @@
+@charset "UTF-8";
+
+body{
+  margin: 0; /*画面いっぱい広げる*/
+  background-color: rgb(241, 235, 222);
+}
+.siteHeader{
+  position: relative;
+  margin-bottom: 8vh;
+}
+
+/* ヘッダー */
+/* ヘッダー1130以上 */
+@media screen and (min-width: 1130px) {
+  .normal{
+    display: flex;
+    margin: 0 auto;
+    width:100%;
+    align-items: center; /* 上下中央に揃える */
+    justify-content: center;
+    background-color:rgba(0, 0, 0, .6);
+    /* rgb(255, 255, 255, 0.5);*/
+  }
+  .global-nav{
+    list-style: none;
+    display: flex;
+    margin: 30px auto 30px auto;
+  }
+  .global-nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .global-nav li{
+    font-size: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+    color: #fff
+  }
+  /* ハンバーガーメニューを非表示 */
+  .drawer{
+    display: none;
+  }
+  /* White Book Cafe の文字 */
+  .siteHeader-content{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(228, 247, 247);
+    font-family: Times;
+  }
+  .siteHeader-content h1{
+    margin: 35vh auto;
+  }
+}
+
+/* ヘッダー1130未満 */
+@media screen and (max-width: 1130px) {
+  /*normal非表示*/
+  .normal{
+    display: none;
+  }
+  /* ハンバーガーメニューを表示 */
+  .drawer{
+    display: block;
+    background-color: rgba(0, 0, 0, .6);
+    position: relative;
+    cursor: pointer;
+    margin: 0 0 0 auto;
+    height: 60px;
+    width: 60px;
+  }
+  /* ハンバーガーアイコン */
+  .btn-burger {
+    cursor: pointer;
+    display: block;
+    width: 56px;
+    height: 60px;
+    position: absolute;
+    top: 3px;
+    right: 4px;
+  }
+  /* ハンバーガーアイコンを作る三本線 */
+  .icon, .icon:before, .icon:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 2px; /* 線の太さ */
+    width: 35px; /* 線の長さ */
+    background-color: #fff;
+    border-radius: 2px;
+    display: block;
+    content: '';
+    cursor: pointer;
+    margin: auto;
+  }
+  /* 三本線の間隔 */
+  .icon:before {
+    top: 20px;
+  }
+  .icon:after {
+    top: -20px;
+  }
+  /* チェックボックス非表示 */
+  .nav-toggle {
+    display: none;
+  }
+  /* アイコンをクリックしたら */
+  .nav-toggle:checked ~ .btn-burger .icon {
+    background: transparent;
+  }
+  .nav-toggle:checked ~ .btn-burger .icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .nav-toggle:checked ~ .btn-burger .icon:after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  .icon,
+  .icon:before,
+  .icon:after {
+    transition: all .8s;
+  }
+  /* 表示されるメニューの中身 */
+  .nav {
+    background-color: rgba(0, 0, 0, .6);
+    width: 260px;
+    top: 60px;
+    right: 0;
+    position: absolute; 
+  }
+  .nav-list a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-align: left;
+    margin: 0;
+  }
+  .nav-list {
+    list-style: none;
+    display: none;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: auto;
+  }
+  .nav-list li {
+    margin: 0;
+    padding: 20px 5px;
+  }
+  .nav-toggle:checked ~ .nav .nav-list {
+    display: block;
+  }
+}
+
+
+/*メイン*/
+main{
+  margin-top: 0;
+}
+
+h1{
+  font-size: 60px;
+  color:  #293B4E;
+  font-family: Impact;
+  margin: 60px auto;
+  text-align: center;
+}
+ruby{
+  ruby-position: under;
+}
+rt {
+	position: relative;
+	bottom: 15px;
+	transform: translateY(15px);
+  font-family: "ヒラギノ角ゴ ProN W3";
+  font-size: 23px;
+}
+.All{
+  background-color: #fff;
+  border-radius: 6px;
+  width: 95%;
+  margin: auto;
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+}
+
+h2{
+  font-size: 30px;
+  color:  #293B4E;
+  font-family: Impact;
+  text-align: center;
+}
+
+.Member {
+  margin-top: 6vh;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  max-width: 720px;
+  }
+@media screen and (max-width: 480px) {
+  .Member {
+  margin-top: 40px;
+  }
+}
+
+  /*4つ登録欄*/
+  .Member-Item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 95%;
+  margin: auto 20px;
+  }
+
+  /*必須/項目名/入力欄*/
+  .Member-Item-Zoon{
+  display: flex;
+  }
+
+  /*必須/項目名 */
+  .Member-Item-Label {
+  width: 100%;
+  max-width: 248px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  margin: 15px auto 15px auto;
+  }
+@media screen and (max-width: 480px) {
+  .Member-Item-Label {
+  max-width: inherit;
+  font-size: 15px;
+  }
+}
+
+/*必須*/
+.Form-Item-Label-Required {
+  border-radius: 6px;
+  width: 48px;
+  text-align: center;
+  background: #faa844;
+  color: #fff;
+  font-size: 14px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 8px;
+  }
+@media screen and (max-width: 480px) {
+  .Form-Item-Label-Required {
+  border-radius: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: 32px;
+  font-size: 10px;
+  }
+}
+
+/*項目名*/
+.Form-Item-Label-Contents {
+  list-style: none;
+  font-size: 18px;
+  margin: auto 30px auto 15px;
+  }
+
+/*入力欄*/
+.Member-Item-Input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  height: 48px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  }
+  @media screen and (max-width: 480px) {
+    .Member-Item-Input {
+    height: 48px;
+    flex: inherit;
+    font-size: 15px;
+      }
+    }
+
+/*errorメッセージ*/
+.error{
+  text-align: left;
+  margin-left: 30vh;
+}
+
+/*注意事項*/
+.Member-Item-Tell{
+  text-align: center;
+}
+
+/*member1のボタン*/
+.Btn a{
+  align-items: center;
+}
+.Member-Btn {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+  height: 48px;
+  width: 50vh;
+	color: #333;
+	font-size: 18px;
+	font-weight: 700;
+  letter-spacing: 0.05em;
+  background: #faa844;
+  border-radius: 6px;
+  border: 2px solid #293B4E;
+  margin: 7vh auto;
+  text-decoration: none;
+  }
+  
+/*member2のボタン*/
+.Form-Btn {
+  border-top: 1px solid #ddd;
+  width: 90%;
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+  display: block;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  }
+  @media screen and (max-width: 480px) {
+  .Form-Btn {
+  margin-top: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 160px;
+  font-size: 16px;
+  }
+  }
+
+.button02 {
+  border-radius: 6px;
+  background : #d9534f;
+  border : 1px solid #d43f3a;
+  margin-left : 10px;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100px;
+  }
+
+  .button01 {
+  border-radius: 6px;
+  background : #5cb85c;
+  border : 1px solid #4cae4c;
+  margin-left : 50px;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100px;
+  }
+
+
+/* フッター */
+footer{
+  margin: 80px auto auto auto;
+  padding: 30px 0 0 0 ;
+  background-color: rgba(185, 183, 183, 0.5);
+  text-align: center;
+}
+.footer-menu{
+  display: block;
+}
+
+.left{
+  align-items: center;
+  margin: auto;
+}
+.inner{
+  display: flex;
+  justify-content: center;
+}
+.inner img{
+  list-style: none;
+  width: 80px;
+  height: auto;
+  margin: 0;
+}
+  @media screen and (max-width: 1130px) {
+    .inner img{
+      width: 60px;
+    }
+  }
+.Company-name{
+  margin: 0;
+  padding: 20px 0 0 10px;
+  font-size: 20px;
+  font-weight:bold;
+  color: rgba(0, 0, 0, .6);
+}
+  @media screen and (max-width: 1130px) {
+    .Company-name{
+      padding: 15px 0 0 10px;
+      font-size: 18px;
+    }
+  }
+.right{
+  margin: auto;
+  text-align: center;
+}
+.menu{
+  display: flex;
+  justify-content: center;
+}
+.menu-left, .menu-right{
+  padding: 0;
+  margin: auto 20px;
+}
+.menu-left li, .menu-right li{
+  list-style: none;
+  font-size: 20px;
+  padding: 10px;      
+}
+  @media screen and (max-width: 1130px) {
+    .menu-left li, .menu-right li{
+      font-size: 17px;
+    }
+  }
+.menu-left a, .menu-right a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, .6);
+}
