@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+body {
+  margin-top: 50px;
+}
+h2 {
+  text-align: center;
+}
+.message {
+  text-align: center;
+}
+.back{
+  text-align: center;
+  margin: 50px auto;
+}
+a{
+  color: black;
+}
