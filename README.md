@@ -1,11 +1,11 @@
 # White Book Cafe
 HTML , CSS  , PHP を使用して、ブックカフェのホームページを作成しました。<br>
-公開しているもの<br>
+以下の機能を一部変更して、公開しています。<br>
 ・White Book Cafeについて<br>
 ・お知らせ<br>
 ・メニュー<br>
 ・会員登録<br>
-・アクセス
+・アクセス<br>
 ・お問い合わせ<br>
 <br>
 ## Description
